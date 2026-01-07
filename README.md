@@ -49,10 +49,10 @@ pip install deep-translator
 3. Biên dịch code C++
 Nếu dùng VS Code (Terminal):
 
-Bash
-
 g++ main.cpp Dictionary.cpp Internet.cpp -o TuDien
+
 Nếu dùng Visual Studio:
+
 
 Tạo Empty Project.
 
