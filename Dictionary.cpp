@@ -44,17 +44,23 @@ Node* SearchWord(HashTable ht, string anh) {
 
 // Hiển thị toàn bộ từ điển
 void DisplayAll(HashTable ht) {
+    cout << "\n--- KIEM TRA CAU TRUC BANG BAM ---\n";
     for (int i = 0; i < TABLE_SIZE; i++) {
+        // Chỉ in những dòng có dữ liệu
         if (ht.buckets[i] != NULL) {
-            cout << (char)('A' + i) << ": ";
+            // In chỉ số index và chữ cái đại diện
+            cout << "(" << (char)('a' + i) << "): ";
+            
             Node* p = ht.buckets[i];
             while (p != NULL) {
-                cout << p->tuTiengAnh << "=" << p->nghiaTiengViet << " | ";
+                // In mũi tên để thể hiện liên kết
+                cout << "[" << p->tuTiengAnh << "] -> "; 
                 p = p->next;
             }
-            cout << endl;
+            cout << "NULL" << endl; // Kết thúc danh sách là NULL
         }
     }
+    cout << "----------------------------------\n";
 }
 
 // Hàm lưu dữ liệu từ RAM xuống ổ cứng
