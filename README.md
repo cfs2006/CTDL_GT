@@ -44,9 +44,8 @@ Python (Phiên bản 3.x trở lên).
 2. Cài đặt thư viện Python
 Mở Terminal/CMD và chạy lệnh sau để cài thư viện dịch thuật:
 
-Bash
-
 pip install deep-translator
+
 3. Biên dịch code C++
 Nếu dùng VS Code (Terminal):
 
@@ -62,9 +61,9 @@ Add tất cả các file .cpp và .h vào dự án.
 Bấm F5 để chạy.
 
 4. Chạy ứng dụng
-Bash
 
 .\TuDien.exe
+
 📸 Demo Logic
 Kịch bản Tra cứu:
 
